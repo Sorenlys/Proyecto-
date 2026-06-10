@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0; /* Corregido */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6; /* Corregido: 17 era demasiado grande */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0d0d0d;
+}
+
+header {
+  background: #2D0054;
+  color: #E0E0E0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Corregido */
+  align-items: center; /* Corregido */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #E0E0E0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+section {
+  flex: 1.5; /* Le damos un poco más de espacio al contenido */
+  background-color: #1A0B2E;
+  color: #F5F5F5;
+  padding: 20px;
+}
+
+section h1, section h2, section h3, section h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #0A0E14;
+  color: #FFD700;
+  text-align: center;
+  padding: 1rem;
+}
+
+aside {
+  flex: 1;
+  background-color: #3D0000;
+  color: #C0C0C0;
+  padding: 20px;
+}
+
+aside h1, aside h2 {
+  margin-top: 15px;
+}
+
+img {
+  width: 100%; /* Ajuste para que no se desborde en celulares */
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin: 10px 0;
+}
+
+h2 {
+  color: #FF5E00;
+}
+
+
+video {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 20%;
+  margin: 15px 0;
+}
+
+/* LA GALERÍA Y SUS BOTONES */
+.galeria {
+  margin-top: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.galeria img {
+  max-height: 250px;
+  border-radius: 8px; /* Un borde más suave para la foto principal */
+}
+
+button {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 20px; /* Corregido de 20% a 20px para que parezca botón */
+  color: pink;
+  background-color: fuchsia;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}

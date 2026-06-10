@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cómo entrenar a tu dragón - Fan Page</title>
+  <!-- Esta línea es el puente. Busca el archivo dragones.css en tu misma carpeta -->
+  <link rel="stylesheet" href="dragones.css">
+</head>
+<body>
+
+  <header>
+    <h1>CÓMO ENTRENAR A TU DRAGÓN</h1>
+    <nav>
+      <ul>
+        <li><a href="fabiindex.html">Inicio</a></li>
+        <li><a href="inicio.html">Dragones</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <h1>La Leyenda de Hipo y Chimuelo</h1>
+      <p>En la isla de Mema, los vikingos se dedican a combatir a los dragones. Sin embargo, un joven cambiará el destino de su pueblo para siempre.</p>
+    
+      <h2>1. Un Vikingo Diferente</h2>
+      <p>Hipo es el hijo del jefe. A diferencia de los demás, no tiene la fuerza física para cazar dragones, pero lo compensa con su gran ingenio.</p>
+      
+      <h2>2. El Furia Nocturna</h2>
+      <p>Tras derribar por accidente al dragón más misterioso de todos, descubre que todo lo que su pueblo cree saber sobre ellos está mal.</p>
+ 
+      <h3>Tráiler de la Película</h3>   
+      <video src="video2.mp4" autoplay loop controls></video>
+      
+      <h4>Una Amistad Inquebrantable</h4>
+      <p>Al construirle una prótesis para su cola, Hipo y Chimuelo crean un vínculo único.</p>
+      
+      <img src="foto7.jpg" alt="Vuelo">
+      <h2>Lecciones de Vuelo</h2>
+      <p>Hipo aprende a volar junto a Chimuelo, descubriendo los secretos del cielo.</p>
+      <h1>¡El cielo ya no es el límite!</h1>
+    </section>
+    
+    <aside>
+      <h1>Especies de Dragones</h1>
+      <p>Conoce a algunas de las fascinantes criaturas de Mema.</p>
+      <img src="foto8.jpg" alt="Chimuelo">
+      <h2>Chimuelo (Furia Nocturna)</h2> 
+      <p>Es inteligente, veloz y su fuego de plasma es letal en la oscuridad.</p>
+      
+      <img src="foto9.jpg" alt="Isla">
+      <img src="foto10.jpg" alt="Bosque">
+      <img src="foto11.jpg" alt="Fuego">
+    
+      <div class="galeria">
+  <h3>Galería de Isla Mema</h3>
+  <img id="fotoPrincipalDragones" src="foto15.jpg" width="500">
+  <br>
+  <button id="btnAtrasDragones" onclick="cambiarFotoDragon(-1)">Anterior</button>
+  <button id="btnSiguienteDragones" onclick="cambiarFotoDragon(1)">Siguiente</button>
+</div>
+
+<script>
+  // Fotos para la página de dragones
+  const fotosDragones = [
+    "foto14.jpg", 
+    "foto15.jpg",  
+    "foto16.jpeg",
+  ];
+  
+  let indiceDragon = 0;
+
+  function cambiarFotoDragon(direccion) {
+    indiceDragon = indiceDragon + direccion;
+    
+    if (indiceDragon >= fotosDragones.length) {
+      indiceDragon = 0;
+    }
+    if (indiceDragon < 0) {
+      indiceDragon = fotosDragones.length - 1;
+    }
+    
+    document.getElementById('fotoPrincipalDragones').src = fotosDragones[indiceDragon];
+  }
+      
+</script>
+
+      <script src="script.js"></script>
+    </aside>
+  </main>
+  
+  <footer>
+    <p>Diseñado por: sorenlys</p>
+  </footer>
+
+</body>
+</html>

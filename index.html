@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Trilogía Culpables - Fan Page</title>
+  <!-- Tu plantilla pide estilos.css (fíjate en la e) -->
+  <link rel="stylesheet" href="Fabiestilos.css">
+</head>
+<body>
+  <header>
+    <h1>TRILOGÍA CULPABLES</h1>
+  
+    <nav>
+      <ul>
+        <!-- Enlaces corregidos y válidos -->
+        <li><a href="fabiindex.html">Inicio</a></li>
+        <li><a href="inicio.html">peli</a></li>
+        <div style="text-align: center; margin: 15px 0;">
+  <p style="color: #00f2ff; font-weight: bold; margin-bottom: 5px;">🎵 Escuchar Música de la Saga:</p>
+  <!-- Cambia 'cancion.mp3' por el nombre exacto de tu archivo de música -->
+  <audio src="tiroteo.flac" controls loop></audio>
+</div>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- COLUMNA IZQUIERDA: CONTENIDO PRINCIPAL -->
+    <section>
+      <h1>La Saga de Mercedes Ron</h1>
+      <p>Una historia apasionante de amor prohibido, carreras ilegales y secretos familiares que ha cautivado a millones de lectores en todo el mundo.</p>
+      
+      <h2>1. Culpa Mía</h2>
+      <p>Noah es obligada a dejar su ciudad para mudarse a la mansión del nuevo esposo de su madre. Allí conoce a Nick, su nuevo hermanastro, con quien chocará desde el primer segundo.</p>
+      
+      <h2>2. Culpa Tuya</h2>
+      <p>El amor entre ellos es un fuego difícil de apagar, pero el orgullo, los celos y los traumas del pasado amenazan con destrozar todo lo que han construido.</p>
+      
+ 
+      <h3>Tráiler Oficial</h3>   
+      <!-- Colocamos un video de ejemplo, tú puedes cambiar la ruta en src -->
+      <video src="video.mp4" autoplay loop controls></video>
+      
+      <h4>3. Culpa Nuestra</h4>
+      <p>La distancia y los peligros constantes llevan la relación de Nick y Noah al límite absoluto. ¿Habrá un final feliz para un amor tan destructivo?</p>
+      
+      <!-- Imagen ilustrativa en la sección -->
+      <img src="foto4.jpg" alt="Carrera de autos">
+      <h2>Peligro y Velocidad</h2>
+      <p>El universo de la saga gira en torno a las peligrosas carreras nocturnas de autos, donde Nick Leister domina las calles de la ciudad de Los Ángeles.</p>
+      <h1>¿Estás listo para correr?</h1>
+       <div style="text-align: center; margin: 15px 0;">
+  <p style="color: #00f2ff; font-weight: bold; margin-bottom: 5px;">🎵 Escuchar Música de la Saga:</p>
+         <h2> </h2>
+  <!-- Cambia 'cancion.mp3' por el nombre exacto de tu archivo de música -->
+  <audio src="tiroteo.flac" controls loop></audio>
+</div>
+    </section>
+    
+    <!-- COLUMNA DERECHA: APARTADOS Y GALERÍA INTERACTIVA -->
+    <aside>
+      <h1>Los Protagonistas</h1>
+      <p>Conoce los rostros que le dieron vida a la caótica historia de amor.</p>
+      <img src="foto5.jpg" alt="Noah Morgan">
+      <h2>Nick & Noah</h2> 
+      <p>Dos personalidades opuestas que se atraen como imanes en una tormenta perfecta.</p>
+      
+      <!-- Las tres imágenes que pide la estructura de tu aside -->
+      <img src="foto1.jpg" alt="Auto 1">
+      <img src="foto2.jpg" alt="Auto 2">
+      <img src="foto3.jpg" alt="auto 3">
+
+   <div class="galeria">
+  <h3>Galería de Fotos</h3>
+  <!-- Mantenemos tu id correcto y tu foto inicial -->
+  <img id="fotoPrincipal" src="foto6.jpg" width="500">
+  <br>
+  <h1>foto de fabi</h1>
+  
+  <!-- Los botones ahora ejecutan las funciones directamente -->
+  <button id="btnAtras" onclick="cambiarFoto(-1)">Anterior</button>
+  <button id="btnSiguiente" onclick="cambiarFoto(1)">Siguiente</button>
+</div>
+
+<!-- EL CÓDIGO DE LAS FOTOS DIRECTO AQUÍ PARA QUE NO FALLE -->
+<script>
+  // Pon aquí la lista de tus fotos locales exactas:
+  const misFotos = [
+    "foto6.jpg", 
+    "html.jpg",
+      "foto5.jpg",
+  ];
+  
+  let indiceActual = 0;
+
+  function cambiarFoto(direccion) {
+    // Sumamos o restamos al índice según el botón presionado
+    indiceActual = indiceActual + direccion;
+    
+    // Si se pasa del final, vuelve a la primera
+    if (indiceActual >= misFotos.length) {
+      indiceActual = 0;
+    }
+    // Si se va antes del principio, va a la última
+    if (indiceActual < 0) {
+      indiceActual = misFotos.length - 1;
+    }
+    
+    // Cambiamos la imagen en la pantalla
+    document.getElementById('fotoPrincipal').src = misFotos[indiceActual];
+  }
+</script>
+     
+      <script src="script.js"></script>
+    </aside>
+  </main>
+  
+  <footer>
+    <p>creado por: Sorenlys &copi; 2026</p>
+  </footer>
+</body>
+</html>

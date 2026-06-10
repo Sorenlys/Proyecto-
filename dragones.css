@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #060913;
+  color: #e2e8f0;
+}
+
+header {
+  background: #0f172a;
+  color: #00f2ff;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #00f2ff;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.6);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+  color: #00f2ff;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+  padding: 15px;
+}
+
+section {
+  flex: 1.5;
+  background-color: #111827;
+  color: #f3f4f6;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+section h1 {
+  color: #00f2ff;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+section h2 {
+  color: #10b981;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #020617;
+  color: #10b981;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+aside {
+  flex: 1;
+  background-color: #1e0b0b;
+  color: #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+aside h1 {
+  color: #ff5e00;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  border-radius: 12px;
+  margin: 15px 0;
+  border: 2px solid #00f2ff;
+}
+
+.galeria {
+  margin-top: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ff5e00;
+}
+
+button {
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 25px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #d946ef, #8b5cf6);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 10px 5px;
+  text-transform: uppercase;
+}
